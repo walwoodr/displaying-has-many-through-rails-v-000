@@ -152,6 +152,8 @@ Comments:
 
 This is the same as we've done before –– we're simply looking at data associated with posts and comments. Calling `comment.user` returns for use the `User` object associated with that comment. We can then call any method that our user responds to, such as `username`.
 
+**Note** As we display the comment's user's username above(`comment.user.username`), we might want to create an instance method such as `.commenter_username` in keeping with the Law of Demeter.
+
 ## Adding Posts to Our Users
 
 Let's say that on our `User#show` page we want our users to see a list of all of the posts that they've commented on. What would that look like?
